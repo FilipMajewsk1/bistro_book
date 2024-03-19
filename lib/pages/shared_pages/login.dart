@@ -4,10 +4,10 @@ class login extends StatefulWidget {
   const login({Key? key}) : super(key: key);
 
   @override
-  State<login> createState() => _loginState();
+  State<login> createState() => _login_state();
 }
 
-class _loginState extends State<login>{
+class _login_state extends State<login>{
   final _loginKey = GlobalKey<FormState>();
   final _passwordKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
@@ -17,7 +17,7 @@ class _loginState extends State<login>{
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(156, 214, 228, 1.0),
+        backgroundColor: Color.fromRGBO(236, 244, 255,1.8),
         body: SingleChildScrollView(
           child: Center(
             child: Column(
