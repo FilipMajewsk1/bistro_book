@@ -115,7 +115,35 @@ class _login_state extends State<login>{
                     ),
                   ),
                 ),
-                  //TODO login button
+
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(150, 5, 0, 0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      if(emailController.text == "owner"){
+                        Navigator.pushNamed(context, '/owners_home');
+                      } else if(emailController.text == "cook"){
+                        Navigator.pushNamed(context, '/cooks_home');
+                      } else if(emailController.text == "waiter"){
+                        Navigator.pushNamed(context, '/waiters_home');
+                      }
+                    },
+
+                    child: Text(
+                      "Log in",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color:  Color.fromRGBO(255, 255, 255,1.0)
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
+                      side: BorderSide(color: Colors.black),
+                      fixedSize: Size(150, 30)
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
