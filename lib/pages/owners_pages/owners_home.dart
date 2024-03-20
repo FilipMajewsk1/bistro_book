@@ -17,7 +17,7 @@ class _owners_home_state extends State<owners_home>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(236, 244, 255,1.8),
+      backgroundColor: Color.fromRGBO(236, 244, 255,1.0),
       appBar: AppBar(
         title: Text(
           "BistroBook",
@@ -30,147 +30,168 @@ class _owners_home_state extends State<owners_home>{
         backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
       ),
       body: SingleChildScrollView(
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 140, 0, 0),
-            child: Column(
-              children: <Widget>[
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(0, 140, 0, 0),
+              child: Column(
+                children: <Widget>[
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
 
-                    Padding(
-                      padding: const EdgeInsets.all(30),
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color:  Color.fromRGBO(255, 255, 255,1.0)
+                      Padding(
+                        padding: const EdgeInsets.all(30),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Schedule",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color:  Color.fromRGBO(255, 255, 255,1.0)
+                            ),
                           ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
-                          side: BorderSide(color: Colors.black),
-                          fixedSize: Size(250, 155)
-                        ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(30),
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color:  Color.fromRGBO(255, 255, 255,1.0)
-                          ),
-                        ),
-                        style: ElevatedButton.styleFrom(
+                          style: ElevatedButton.styleFrom(
                             backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
                             side: BorderSide(color: Colors.black),
-                            fixedSize: Size(250, 155)
-                        ),
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.all(30),
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color:  Color.fromRGBO(255, 255, 255,1.0)
+                            fixedSize: Size(250, 155),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)
+                            ),
                           ),
                         ),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
-                            side: BorderSide(color: Colors.black),
-                            fixedSize: Size(250, 155)
-                        ),
                       ),
-                    ),
 
-                  ],
-                ),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-
-                    Padding(
-                      padding: const EdgeInsets.all(30),
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color:  Color.fromRGBO(255, 255, 255,1.0)
+                      Padding(
+                        padding: const EdgeInsets.all(30),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Monthly Summary",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color:  Color.fromRGBO(255, 255, 255,1.0)
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
+                              side: BorderSide(color: Colors.black),
+                              fixedSize: Size(250, 155),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)
+                            ),
                           ),
                         ),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
-                            side: BorderSide(color: Colors.black),
-                            fixedSize: Size(250, 155)
-                        ),
                       ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.all(30),
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color:  Color.fromRGBO(255, 255, 255,1.0)
+                      Padding(
+                        padding: const EdgeInsets.all(30),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Storage",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color:  Color.fromRGBO(255, 255, 255,1.0)
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
+                              side: BorderSide(color: Colors.black),
+                              fixedSize: Size(250, 155),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)
+                            ),
                           ),
                         ),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
-                            side: BorderSide(color: Colors.black),
-                            fixedSize: Size(250, 155)
-                        ),
                       ),
-                    ),
 
-                    Padding(
-                      padding: const EdgeInsets.all(30),
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Text(
-                          "",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color:  Color.fromRGBO(255, 255, 255,1.0)
+                    ],
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+
+                      Padding(
+                        padding: const EdgeInsets.all(30),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Menu",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color:  Color.fromRGBO(255, 255, 255,1.0)
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
+                              side: BorderSide(color: Colors.black),
+                              fixedSize: Size(250, 155),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)
+                              ),
                           ),
                         ),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
-                            side: BorderSide(color: Colors.black),
-                            fixedSize: Size(250, 155)
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.all(30),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Change Menu",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color:  Color.fromRGBO(255, 255, 255,1.0)
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
+                              side: BorderSide(color: Colors.black),
+                              fixedSize: Size(250, 155),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)
+                            ),
+                          ),
                         ),
                       ),
-                    ),
 
-                  ],
-                ),
+                      Padding(
+                        padding: const EdgeInsets.all(30),
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color:  Color.fromRGBO(255, 255, 255,1.0)
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
+                              side: BorderSide(color: Colors.black),
+                              fixedSize: Size(250, 155),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)
+                            ),
+                          ),
+                        ),
+                      ),
 
-              ],
+                    ],
+                  ),
+
+                ],
+              ),
             ),
           ),
         ),

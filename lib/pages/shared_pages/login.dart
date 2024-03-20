@@ -17,7 +17,7 @@ class _login_state extends State<login>{
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(236, 244, 255,1.8),
+        backgroundColor: Color.fromRGBO(236, 244, 255,1.0),
         body: SingleChildScrollView(
           child: Center(
             child: Column(
@@ -140,7 +140,10 @@ class _login_state extends State<login>{
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color.fromRGBO(80, 200, 120, 1.0),
                       side: BorderSide(color: Colors.black),
-                      fixedSize: Size(150, 30)
+                      fixedSize: Size(150, 30),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8.0)
+                      ),
                     ),
                   ),
                 ),
