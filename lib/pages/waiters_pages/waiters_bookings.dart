@@ -131,16 +131,17 @@ class _waiters_bookings_state extends State<waiters_bookings>{
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
+
                               )
                             ),
                             child: DataTable(
 
                               columns: const [
-                                DataColumn(label: Text('Hour')),
-                                DataColumn(label: Text('Name')),
-                                DataColumn(label: Text('Table')),
-                                DataColumn(label: Text('Size')),
-                                DataColumn(label: Text('Delete')),
+                                DataColumn(label: Text('Hour', textAlign: TextAlign.center,)),
+                                DataColumn(label: Text('Name', textAlign: TextAlign.center)),
+                                DataColumn(label: Text('Table', textAlign: TextAlign.center)),
+                                DataColumn(label: Text('Size', textAlign: TextAlign.center)),
+                                DataColumn(label: Text('Delete', textAlign: TextAlign.center)),
                               ],
                               rows: [],
                               // List<DataRow>.generate(

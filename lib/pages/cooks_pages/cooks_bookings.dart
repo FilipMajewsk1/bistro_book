@@ -45,9 +45,9 @@ class _cooks_bookings_state extends State<cooks_bookings>{
                     children: [
 
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(50, 50, 70, 0),
+                        padding: const EdgeInsets.fromLTRB(150, 0, 70, 0),
                         child: Container(
-                          width: 300,
+                          width: 450,
                           height: 400,
                           child: TableCalendar(
                             firstDay: DateTime.utc(2010, 10, 16),
@@ -102,43 +102,49 @@ class _cooks_bookings_state extends State<cooks_bookings>{
                         ),
                       ),
 
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Theme(
-                          data: Theme.of(context).copyWith(
-                              dataTableTheme: DataTableThemeData(
-                                headingRowColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states){
-                                  return Color.fromRGBO(80, 200, 120, 1.0);
-                                }),
-                                headingTextStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )
-                          ),
-                          child: DataTable(
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(50, 130, 100, 10),
+                        child: SizedBox(
+                          width: 700,
+                          height: 400,
+                          child: SingleChildScrollView(
+                            child: Theme(
+                              data: Theme.of(context).copyWith(
+                                  dataTableTheme: DataTableThemeData(
+                                    headingRowColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states){
+                                      return Color.fromRGBO(80, 200, 120, 1.0);
+                                    }),
+                                    headingTextStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                              ),
+                              child: DataTable(
 
-                            columns: const [
-                              DataColumn(label: Text('Hour')),
-                              DataColumn(label: Text('Name')),
-                              DataColumn(label: Text('Table')),
-                              DataColumn(label: Text('Size')),
-                              DataColumn(label: Text('Delete')),
-                            ],
-                            rows: [],
-                            // List<DataRow>.generate(
-                            //   rezerwacje.length,
-                            //       (index) => DataRow(cells: [
-                            //     DataCell(Text(rezerwacje[index].godzina)),
-                            //     DataCell(Text(rezerwacje[index].nazwisko)),
-                            //     DataCell(Text(rezerwacje[index].nazwaStolika)),
-                            //     DataCell(Text(rezerwacje[index].wielkoscStolika.toString())),
-                            //     DataCell(IconButton(
-                            //       icon: Icon(Icons.delete),
-                            //       onPressed: () => _usunRezerwacje(index),
-                            //     )),
-                            //   ]),
-                            // ),
+                                columns: const [
+                                  DataColumn(label: Text('Hour')),
+                                  DataColumn(label: Text('Name')),
+                                  DataColumn(label: Text('Table')),
+                                  DataColumn(label: Text('Size')),
+                                  DataColumn(label: Text('Delete')),
+                                ],
+                                rows: [],
+                                // List<DataRow>.generate(
+                                //   rezerwacje.length,
+                                //       (index) => DataRow(cells: [
+                                //     DataCell(Text(rezerwacje[index].godzina)),
+                                //     DataCell(Text(rezerwacje[index].nazwisko)),
+                                //     DataCell(Text(rezerwacje[index].nazwaStolika)),
+                                //     DataCell(Text(rezerwacje[index].wielkoscStolika.toString())),
+                                //     DataCell(IconButton(
+                                //       icon: Icon(Icons.delete),
+                                //       onPressed: () => _usunRezerwacje(index),
+                                //     )),
+                                //   ]),
+                                // ),
+                              ),
+                            ),
                           ),
                         ),
                       ),

@@ -34,7 +34,7 @@ class _owners_home_state extends State<owners_home>{
           scrollDirection: Axis.horizontal,
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 140, 0, 0),
+              padding: const EdgeInsets.fromLTRB(300, 140, 0, 0),
               child: Column(
                 children: <Widget>[
 
