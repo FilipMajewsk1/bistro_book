@@ -70,7 +70,9 @@ class _waiters_home_state extends State<waiters_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/waiters_orders');
+                          },
                           child: Text(
                             "Orders",
                             style: TextStyle(
@@ -93,7 +95,9 @@ class _waiters_home_state extends State<waiters_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/schedule');
+                          },
                           child: Text(
                             "Schedule",
                             style: TextStyle(
@@ -123,7 +127,9 @@ class _waiters_home_state extends State<waiters_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/shifts');
+                          },
                           child: Text(
                             "Shifts",
                             style: TextStyle(
@@ -146,7 +152,9 @@ class _waiters_home_state extends State<waiters_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/menu');
+                          },
                           child: Text(
                             "Menu",
                             style: TextStyle(

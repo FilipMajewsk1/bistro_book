@@ -45,7 +45,9 @@ class _owners_home_state extends State<owners_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/owners_schedule');
+                          },
                           child: Text(
                             "Schedule",
                             style: TextStyle(
@@ -68,7 +70,9 @@ class _owners_home_state extends State<owners_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/owners_monthly_summary');
+                          },
                           child: Text(
                             "Monthly Summary",
                             style: TextStyle(
@@ -91,7 +95,9 @@ class _owners_home_state extends State<owners_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/storage_raports');
+                          },
                           child: Text(
                             "Storage",
                             style: TextStyle(
@@ -121,7 +127,9 @@ class _owners_home_state extends State<owners_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/menu');
+                          },
                           child: Text(
                             "Menu",
                             style: TextStyle(
@@ -144,7 +152,9 @@ class _owners_home_state extends State<owners_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/owners_change_menu');
+                          },
                           child: Text(
                             "Change Menu",
                             style: TextStyle(

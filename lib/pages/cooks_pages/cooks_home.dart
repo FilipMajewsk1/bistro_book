@@ -45,7 +45,9 @@ class _cooks_home_state extends State<cooks_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/cooks_bookings');
+                          },
                           child: Text(
                             "Bookings",
                             style: TextStyle(
@@ -68,7 +70,9 @@ class _cooks_home_state extends State<cooks_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/cooks_orders');
+                          },
                           child: Text(
                             "Orders",
                             style: TextStyle(
@@ -91,7 +95,9 @@ class _cooks_home_state extends State<cooks_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/schedule');
+                          },
                           child: Text(
                             "Schedule",
                             style: TextStyle(
@@ -121,7 +127,9 @@ class _cooks_home_state extends State<cooks_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/shifts');
+                          },
                           child: Text(
                             "Shifts",
                             style: TextStyle(
@@ -144,7 +152,9 @@ class _cooks_home_state extends State<cooks_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/cooks_recipes');
+                          },
                           child: Text(
                             "Recipes",
                             style: TextStyle(
@@ -167,7 +177,9 @@ class _cooks_home_state extends State<cooks_home>{
                       Padding(
                         padding: const EdgeInsets.all(30),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/storage_raports');
+                          },
                           child: Text(
                             "Storage",
                             style: TextStyle(

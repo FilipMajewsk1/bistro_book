@@ -8,6 +8,7 @@ class login extends StatefulWidget {
 }
 
 class _login_state extends State<login>{
+
   final _loginKey = GlobalKey<FormState>();
   final _passwordKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
@@ -128,7 +129,6 @@ class _login_state extends State<login>{
                         Navigator.pushNamed(context, '/waiters_home');
                       }
                     },
-
                     child: Text(
                       "Log in",
                       style: TextStyle(
