@@ -38,7 +38,11 @@ class _waiters_orders_state extends State<waiters_orders>{
 
                   Row(
                     children: [
-
+                      Column(
+                        children: [
+                          
+                        ],
+                      ),
                     ],
 
                   ),
